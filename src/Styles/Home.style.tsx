@@ -13,7 +13,7 @@ export const ImgSection = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50%;
+    height: 45%;
     background-color: #76b5c5;
 `
 
@@ -22,6 +22,15 @@ export const DisplayLetterSection = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20%;
+    height: 25%;
+    flex-wrap: wrap;
     background-color: #eab676;
+`
+
+export const SelectedSection = styled.div`
+   display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
 `

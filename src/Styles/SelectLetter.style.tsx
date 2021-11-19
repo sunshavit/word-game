@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
-export const LetterCard = styled.button`
-    height: 100px;
-    width: 70px;
+interface Props {
+  isChecked:boolean
+}
+
+
+export const LetterCard = styled.button<Props>`
+    height: 35%;
+    width: 7%;
     background-color: #eab676;
     outline: none;
     padding: 10px;
@@ -16,6 +21,7 @@ export const LetterCard = styled.button`
     overflow: hidden;
     box-shadow: 4px 4px 0px 0px #e28743;
     margin: 1%;
+    opacity: ${({isChecked})=> isChecked?0:1} ;
     &:before{
     content: '';
     position: absolute;

@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const LettersCardContainer = styled.div`
    display: flex;
-   padding: 10%;
+    height: 85%;
    justify-content: space-around;
    flex-wrap: wrap;
    width: 60%;
-    align-self: center;
 `

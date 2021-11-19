@@ -1,418 +1,329 @@
-export const mock = {
-    "page": 1,
-    "results": [
-      {
-        "poster_path": "/tfdiVvJkYMbUOXDWibPjzu5dY6S.jpg",
-        "popularity": 1.722162,
-        "id": 604,
-        "backdrop_path": "/hHwEptckXUwZM7XO2lxZ8w8upuU.jpg",
-        "vote_average": 8.17,
-        "overview": "Teen Titans is an American animated television series based on the DC Comics characters of the same name, primarily the run of stories by Marv Wolfman and George Pérez in the early-1980s The New Teen Titans comic book series. The show was created by Glen Murakami, developed by David Slack, and produced by Warner Bros. Animation. It premiered on Cartoon Network on July 19, 2003 with the episode \"Divide and Conquer\" and the final episode \"Things Change\" aired on January 16, 2006, with the film Teen Titans: Trouble in Tokyo serving as the series finale. A comic book series, Teen Titans Go!, was based on the TV series. On June 8, 2012, it was announced that the series would be revived as Teen Titans Go! in April 23, 2013 and air on the DC Nation block.IT now airs on the Boomerang channel. ",
-        "first_air_date": "2003-07-19",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          16,
-          10759
-        ],
-        "original_language": "en",
-        "vote_count": 12,
-        "name": "Teen Titans",
-        "original_name": "Teen Titans"
-      },
-      {
-        "poster_path": "/utOLkQhxuhwN3PN0UEPnfhJnkrf.jpg",
-        "popularity": 1.530522,
-        "id": 2085,
-        "backdrop_path": "/mzpeRh7Wu9mP3s9EdsbNMaGsykP.jpg",
-        "vote_average": 8.16,
-        "overview": "Courage the Cowardly Dog is an American comedy horror animated television series created by John R. Dilworth for Cartoon Network. Its central plot revolves around a somewhat anthropomorphic pink/purple dog named Courage who lives with his owners, Muriel and Eustace Bagge, an elderly, married farming couple in the \"Middle of Nowhere\". Courage and his owners are frequently thrown into bizarre misadventures, often involving the paranormal/supernatural and various villains. The show is known for its surreal, often disquieting humor and bizarre plot twists. The series combines elements of comedy horror, science fantasy, and drama.\n\nThe program originated from a short on Cartoon Network's animation showcase series created by Hanna-Barbera president Fred Seibert, \"What a Cartoon!\" titled \"The Chicken from Outer Space\". The segment was nominated for an Academy Award in 1996, and Cartoon Network commissioned a series based on the short. The series, which premiered on November 12, 1999, ran for four seasons, ending on November 22, 2002 with a total of 52 episodes produced. The series was the sixth and final series to be spun off from World Premiere Toons, and it was the eighth series to fall under the Cartoon Cartoons label.",
-        "first_air_date": "1999-11-12",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          10765,
-          16,
-          9648,
-          35
-        ],
-        "original_language": "en",
-        "vote_count": 19,
-        "name": "Coraje, El Perro Cobarde",
-        "original_name": "Coraje, El Perro Cobarde"
-      },
-      {
-        "poster_path": "/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg",
-        "popularity": 21.173765,
-        "id": 1396,
-        "backdrop_path": "/eSzpy96DwBujGFj0xMbXBcGcfxX.jpg",
-        "vote_average": 8.1,
-        "overview": "Breaking Bad is an American crime drama television series created and produced by Vince Gilligan. Set and produced in Albuquerque, New Mexico, Breaking Bad is the story of Walter White, a struggling high school chemistry teacher who is diagnosed with inoperable lung cancer at the beginning of the series. He turns to a life of crime, producing and selling methamphetamine, in order to secure his family's financial future before he dies, teaming with his former student, Jesse Pinkman. Heavily serialized, the series is known for positioning its characters in seemingly inextricable corners and has been labeled a contemporary western by its creator.",
-        "first_air_date": "2008-01-19",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          18
-        ],
-        "original_language": "en",
-        "vote_count": 690,
-        "name": "Breaking Bad",
-        "original_name": "Breaking Bad"
-      },
-      {
-        "poster_path": "/esKFbCWAGyUUNshT5HE5BIpvbcL.jpg",
-        "popularity": 9.911993,
-        "id": 66732,
-        "backdrop_path": "/6c4weB3UycHwPgzv31Awt7nku9y.jpg",
-        "vote_average": 8.08,
-        "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
-        "first_air_date": "2016-07-15",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          18,
-          9648,
-          10765
-        ],
-        "original_language": "en",
-        "vote_count": 77,
-        "name": "Stranger Things",
-        "original_name": "Stranger Things"
-      },
-      {
-        "poster_path": "/mWNadwBZIx8NyEw4smGftYtHHrE.jpg",
-        "popularity": 9.972256,
-        "id": 1437,
-        "backdrop_path": "/qlJB8bkK1JXAQ0m02OYS1ArS6DZ.jpg",
-        "vote_average": 7.95,
-        "overview": "Firefly is set in the year 2517, after the arrival of humans in a new star system and follows the adventures of the renegade crew of Serenity, a \"Firefly-class\" spaceship. The ensemble cast portrays the nine characters who live on Serenity.",
-        "first_air_date": "2002-09-20",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          37,
-          18,
-          10759,
-          10765
-        ],
-        "original_language": "en",
-        "vote_count": 172,
-        "name": "Firefly",
-        "original_name": "Firefly"
-      },
-      {
-        "poster_path": "/vHXZGe5tz4fcrqki9ZANkJISVKg.jpg",
-        "popularity": 9.623731,
-        "id": 19885,
-        "backdrop_path": "/d6Aidd0YoC2WYEYSJRAl63kQnYK.jpg",
-        "vote_average": 7.94,
-        "overview": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
-        "first_air_date": "2010-07-25",
-        "origin_country": [
-          "GB"
-        ],
-        "genre_ids": [
-          80,
-          18,
-          9648
-        ],
-        "original_language": "en",
-        "vote_count": 270,
-        "name": "Sherlock",
-        "original_name": "Sherlock"
-      },
-      {
-        "poster_path": "/jIhL6mlT7AblhbHJgEoiBIOUVl1.jpg",
-        "popularity": 29.780826,
-        "id": 1399,
-        "backdrop_path": "/mUkuc2wyV9dHLG0D0Loaw5pO2s8.jpg",
-        "vote_average": 7.91,
-        "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
-        "first_air_date": "2011-04-17",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          10765,
-          10759,
-          18
-        ],
-        "original_language": "en",
-        "vote_count": 1172,
-        "name": "Game of Thrones",
-        "original_name": "Game of Thrones"
-      },
-      {
-        "poster_path": "/u0cLcBQITrYqfHsn06fxnQwtqiE.jpg",
-        "popularity": 15.71135,
-        "id": 1398,
-        "backdrop_path": "/8GZ91vtbYOMp05qruAGPezWC0Ja.jpg",
-        "vote_average": 7.87,
-        "overview": "The Sopranos is an American television drama created by David Chase. The series revolves around the New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads. Those difficulties are often highlighted through his ongoing professional relationship with psychiatrist Jennifer Melfi. The show features Tony's family members and Mafia associates in prominent roles and story arcs, most notably his wife Carmela and his cousin and protégé Christopher Moltisanti.",
-        "first_air_date": "1999-01-10",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          18
-        ],
-        "original_language": "en",
-        "vote_count": 121,
-        "name": "The Sopranos",
-        "original_name": "The Sopranos"
-      },
-      {
-        "poster_path": "/4ukKkwZWDSCxdXKBWUEfLSuHWmS.jpg",
-        "popularity": 3.7503,
-        "id": 64439,
-        "backdrop_path": "/28hMBZGoeKaz6LoNbztlDIoUQH9.jpg",
-        "vote_average": 7.83,
-        "overview": "Set in Americas Heartland, Making a Murderer follows the harrowing story of Steven Avery, an outsider from the wrong side of the tracks, convicted and later exonerated of a brutal assault. His release triggered major criminal justice reform legislation, and he filed a lawsuit that threatened to expose corruption in local law enforcement and award him millions of dollars. But in the midst of his very public civil case, he suddenly finds himself the prime suspect in a grisly new crime.",
-        "first_air_date": "2015-12-18",
-        "origin_country": [],
-        "genre_ids": [
-          99
-        ],
-        "original_language": "en",
-        "vote_count": 30,
-        "name": "Making a Murderer",
-        "original_name": "Making a Murderer"
-      },
-      {
-        "poster_path": "/ydmfheI5cJ4NrgcupDEwk8I8y5q.jpg",
-        "popularity": 11.085982,
-        "id": 1405,
-        "backdrop_path": "/kgadTwNJYYGZ7LTrw9X7KDiRCfV.jpg",
-        "vote_average": 7.79,
-        "overview": "Dexter is an American television drama series. The series centers on Dexter Morgan, a blood spatter pattern analyst for 'Miami Metro Police Department' who also leads a secret life as a serial killer, hunting down criminals who have slipped through the cracks of justice.",
-        "first_air_date": "2006-10-01",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          18,
-          9648
-        ],
-        "original_language": "en",
-        "vote_count": 250,
-        "name": "Dexter",
-        "original_name": "Dexter"
-      },
-      {
-        "poster_path": "/egrBNjbMKbUao19dJcSNiw4xlft.jpg",
-        "popularity": 7.195255,
-        "id": 46648,
-        "backdrop_path": "/qDEIZWnyRxWTB9zCjyyj4mbURVp.jpg",
-        "vote_average": 7.77,
-        "overview": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
-        "first_air_date": "2014-01-12",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          18
-        ],
-        "original_language": "en",
-        "vote_count": 226,
-        "name": "True Detective",
-        "original_name": "True Detective"
-      },
-      {
-        "poster_path": "/aYVBoq5MEtOBLlivSzDSpteZfXV.jpg",
-        "popularity": 2.733919,
-        "id": 31911,
-        "backdrop_path": "/c368lahfH9sgdDHKp6ds7EprIga.jpg",
-        "vote_average": 7.77,
-        "overview": "Edward and Alphonse Elric's reckless disregard for alchemy's fun­damental laws ripped half of Ed's limbs from his body and left Al's soul clinging to a cold suit of armor. To restore what was lost, the brothers scour a war-torn land for the Philosopher's Sto­ne, a fabled relic which grants the ability to perform alchemy in impossible ways.\n\nThe Elrics are not alone in their search; the corrupt State Military is also eager to harness the artifact's power. So too are the strange Homunculi and their shadowy creator. The mythical gem lures exotic alchemists from distant kingdoms, scarring some deeply enough to inspire murder. As the Elrics find their course altered by these enemies and allies, their purpose remains unchanged – and their bond unbreakable.",
-        "first_air_date": "2009-04-05",
-        "origin_country": [
-          "JP"
-        ],
-        "genre_ids": [
-          16,
-          18,
-          10759,
-          9648
-        ],
-        "original_language": "ja",
-        "vote_count": 30,
-        "name": "Fullmetal Alchemist: Brotherhood",
-        "original_name": "鋼の錬金術師 FULLMETAL ALCHEMIST"
-      },
-      {
-        "poster_path": "/wJKH0MHSvn3vS9fz9wF5IFpoquj.jpg",
-        "popularity": 1.580899,
-        "id": 1063,
-        "backdrop_path": "/dYMycqFrk5AvRPczyAOwxAJv2TK.jpg",
-        "vote_average": 7.76,
-        "overview": "Mugen is a ferocious, animalistic warrior with a fighting style inspired by break-dancing. Jin is a ronin samurai who wanders the countryside alone. They may not be friends, but their paths continually cross. And when ditzy waitress Fuu gets them out of hot water with the local magistrate, they agree to join her search for the samurai who smells like sunflowers.",
-        "first_air_date": "2004-05-20",
-        "origin_country": [
-          "JP"
-        ],
-        "genre_ids": [
-          16,
-          28,
-          12
-        ],
-        "original_language": "ja",
-        "vote_count": 17,
-        "name": "Samurai Champloo",
-        "original_name": "サムライチャンプルー"
-      },
-      {
-        "poster_path": "/qen4mgSun5wy8fgSwXNR23surMM.jpg",
-        "popularity": 1.395938,
-        "id": 39218,
-        "backdrop_path": "/rYIlgL5u4E7Jp1fyGKPOJYsSVWv.jpg",
-        "vote_average": 7.75,
-        "overview": "Madoka Kaname leads a happy life with her family and friends whilst attending Mitakihara School. One day, a magical creature called Kyuubey implores Madoka for help and from then on, she is drawn into a parallel world where magical girls battle against witches.",
-        "first_air_date": "2011-01-07",
-        "origin_country": [
-          "JP"
-        ],
-        "genre_ids": [
-          16,
-          18,
-          9648,
-          10765
-        ],
-        "original_language": "ja",
-        "vote_count": 10,
-        "name": "Puella Magi Madoka Magica",
-        "original_name": "魔法少女まどか☆マギカ"
-      },
-      {
-        "poster_path": "/6wzfCXg2I2LBuaEjh7fkMHXBR9i.jpg",
-        "popularity": 3.373494,
-        "id": 1920,
-        "backdrop_path": "/3Y91NnZZyTS8UbgJUw3AZ6WWKTN.jpg",
-        "vote_average": 7.75,
-        "overview": "The body of Laura Palmer is washed up on a beach near the small Washington state town of Twin Peaks. FBI Special Agent Dale Cooper is called in to investigate her strange demise only to uncover a web of mystery that ultimately leads him deep into the heart of the surrounding woodland and his very own soul.",
-        "first_air_date": "1990-04-08",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          18,
-          9648,
-          53
-        ],
-        "original_language": "en",
-        "vote_count": 62,
-        "name": "Twin Peaks",
-        "original_name": "Twin Peaks"
-      },
-      {
-        "poster_path": "/lxSzRZ49NXwsiyHuvMsd19QxduC.jpg",
-        "popularity": 12.394738,
-        "id": 1408,
-        "backdrop_path": "/6r5o8yvLx7nESRBC1iMuYBCk9Cj.jpg",
-        "vote_average": 7.75,
-        "overview": "Dr. Gregory House, a drug-addicted, unconventional, misanthropic medical genius, leads a team of diagnosticians at the fictional Princeton–Plainsboro Teaching Hospital in New Jersey.",
-        "first_air_date": "2004-11-16",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          18,
-          35,
-          9648
-        ],
-        "original_language": "en",
-        "vote_count": 171,
-        "name": "House",
-        "original_name": "House"
-      },
-      {
-        "poster_path": "/dg7NuKDjmS6OzuNy33qt8kSkPA1.jpg",
-        "popularity": 4.51393,
-        "id": 1438,
-        "backdrop_path": "/4hWfYN3wiOZZXC7t6B70BF9iUvk.jpg",
-        "vote_average": 7.75,
-        "overview": "The Wire is an American television crime drama series set and produced in and around Baltimore, Maryland. Each season of The Wire introduces a different facet of the city of Baltimore. In chronological order they are: the illegal drug trade, the seaport system, the city government and bureaucracy, the school system, and the print news media.\n\nDespite only receiving average ratings and never winning major television awards, The Wire has been described by many critics and fans as one of the greatest TV dramas of all time. The show is recognized for its realistic portrayal of urban life, its literary ambitions, and its uncommonly deep exploration of sociopolitical themes.",
-        "first_air_date": "2002-06-02",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          80,
-          18,
-          9648
-        ],
-        "original_language": "en",
-        "vote_count": 100,
-        "name": "The Wire",
-        "original_name": "The Wire"
-      },
-      {
-        "poster_path": "/iiYFBpjAbQUzsu0k4LDvWqBiQzI.jpg",
-        "popularity": 2.855247,
-        "id": 2490,
-        "backdrop_path": "/fZoj7ZMLbBQjC8MvQjZ3XuzqLwp.jpg",
-        "vote_average": 7.73,
-        "overview": "UK Comedy series about two I.T. nerds and their clueless female manager, who work in the basement of a very successful company. When they are called on for help, they are never treated with any respect at all.",
-        "first_air_date": "2006-02-03",
-        "origin_country": [
-          "GB"
-        ],
-        "genre_ids": [
-          35,
-          18
-        ],
-        "original_language": "en",
-        "vote_count": 81,
-        "name": "The IT Crowd",
-        "original_name": "The IT Crowd"
-      },
-      {
-        "poster_path": "/boh1E1atURBdHXjboTnWOKIfWKb.jpg",
-        "popularity": 1.369815,
-        "id": 3579,
-        "backdrop_path": "/2GWeOe5dhM3BtK94FZ2vjXACvam.jpg",
-        "vote_average": 7.73,
-        "overview": "The Angry Beavers is an American animated television series created by Mitch Schauer for the Nickelodeon channel. The series revolves around Daggett and Norbert Beaver, two young beaver brothers who have left their home to become bachelors in the forest near the fictional Wayouttatown, Oregon. The show premiered in the United States on April 19, 1997. The show started airing on the Nickelodeon Canada channel when it launched on November 2, 2009. The series aired on The '90s Are All That block on TeenNick in the US on October 7, 2011 as part of the block's U Pick with Stick line-up. The series was also up for a U Pick with Stick showdown on The '90s Are All That for the weekend of February 3, 2012, but lost to Rocko's Modern Life and did not air. The series was added to the Sunday line-up on The '90s Are All That on TeenNick, and aired from February 10, 2013, to March 3, 2013. The series returned to The '90s Are All That on TeenNick on March 25, 2013, but has since left the line-up again. The series is also currently being released on DVD.",
-        "first_air_date": "1997-04-20",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          16,
-          35,
-          10751
-        ],
-        "original_language": "en",
-        "vote_count": 11,
-        "name": "The Angry Beavers",
-        "original_name": "The Angry Beavers"
-      },
-      {
-        "poster_path": "/sskPK2HjkFaxam10eg0Hk1A3I2m.jpg",
-        "popularity": 6.055152,
-        "id": 60622,
-        "backdrop_path": "/qq1S5EjaaUrQAcMsn6raNFXpzHk.jpg",
-        "vote_average": 7.72,
-        "overview": "A close-knit anthology series dealing with stories involving malice, violence and murder based in and around Minnesota.",
-        "first_air_date": "2014-04-15",
-        "origin_country": [
-          "US"
-        ],
-        "genre_ids": [
-          80,
-          18,
-          53
-        ],
-        "original_language": "en",
-        "vote_count": 118,
-        "name": "Fargo",
-        "original_name": "Fargo"
-      }
-    ],
-    "total_results": 747,
-    "total_pages": 38
-  }
+import { ServerResponse } from '../Types/serverType';
+
+export const mock: ServerResponse = {
+  page: 1,
+  results: [
+    {
+      backdrop_path: '/7q448EVOnuE3gVAx24krzO7SNXM.jpg',
+      first_air_date: '2021-09-03',
+      genre_ids: [99],
+      id: 130392,
+      name: "The D'Amelio Show",
+      origin_country: ['US'],
+      original_language: 'en',
+      original_name: "The D'Amelio Show",
+      overview:
+        'From relative obscurity and a seemingly normal life, to overnight success and thrust into the Hollywood limelight overnight, the D’Amelios are faced with new challenges and opportunities they could not have imagined.',
+      popularity: 32.28,
+      poster_path: '/z0iCS5Znx7TeRwlYSd4c01Z0lFx.jpg',
+      vote_average: 9.4,
+      vote_count: 2542,
+    },
+    {
+      backdrop_path: null,
+      first_air_date: '2004-05-10',
+      genre_ids: [16, 35],
+      id: 100,
+      name: 'I Am Not an Animal',
+      origin_country: ['GB'],
+      original_language: 'en',
+      original_name: 'I Am Not an Animal',
+      overview:
+        'I Am Not An Animal is an animated comedy series about the only six talking animals in the world, whose cosseted existence in a vivisection unit is turned upside down when they are liberated by animal rights activists.',
+      popularity: 15.9,
+      poster_path: '/qG59J1Q7rpBc1dvku4azbzcqo8h.jpg',
+      vote_average: 9.2,
+      vote_count: 676,
+    },
+    {
+      backdrop_path: '/rkB4LyZHo1NHXFEDHl9vSD9r1lI.jpg',
+      first_air_date: '2021-11-06',
+      genre_ids: [16, 10765, 10759],
+      id: 94605,
+      name: 'Arcane',
+      origin_country: ['US'],
+      original_language: 'en',
+      original_name: 'Arcane',
+      overview:
+        'Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.',
+      popularity: 1657.968,
+      poster_path: '/8yIecXrjTo3uPBPBU2ovrIU6oOp.jpg',
+      vote_average: 9.2,
+      vote_count: 569,
+    },
+    {
+      backdrop_path: '/3C9PgPZxmECrNZGqOU5ssnESANT.jpg',
+      first_air_date: '2021-07-01',
+      genre_ids: [18],
+      id: 125910,
+      name: 'Young Royals',
+      origin_country: ['SE'],
+      original_language: 'sv',
+      original_name: 'Young Royals',
+      overview:
+        'Prince Wilhelm adjusts to life at his prestigious new boarding school, Hillerska, but following his heart proves more challenging than anticipated.',
+      popularity: 48.367,
+      poster_path: '/6CHznbr0BF78ar16zJwTVRYLLOX.jpg',
+      vote_average: 9.1,
+      vote_count: 504,
+    },
+    {
+      backdrop_path: '/hqFaSNICeh0Y3Hp0gtEIzDBmUVo.jpg',
+      first_air_date: '2020-08-19',
+      genre_ids: [10764],
+      id: 106600,
+      name: 'BTS In the SOOP',
+      origin_country: ['KR'],
+      original_language: 'ko',
+      original_name: 'In the SOOP BTS편',
+      overview:
+        "'In the SOOP BTS ver.' is a reality show, portraying BTS members' everyday life, relaxation, and everything in between, away from the city life. A time of freedom and healing in a place for BTS, and BTS only.",
+      popularity: 20.405,
+      poster_path: '/eBsIEKqLMtktw2jpFPa9WTuGyPN.jpg',
+      vote_average: 9.1,
+      vote_count: 184,
+    },
+    {
+      backdrop_path: '/c8dm74uPCMA27iKAR1WnHKTsI9h.jpg',
+      first_air_date: '2015-08-01',
+      genre_ids: [10764],
+      id: 77696,
+      name: 'Run BTS!',
+      origin_country: ['KR'],
+      original_language: 'ko',
+      original_name: '달려라 방탄!',
+      overview:
+        'Run BTS! is a South Korean show by the boy band BTS. The show is all about BTS doing activities, challenges and lots more.',
+      popularity: 16.48,
+      poster_path: '/xxv8Ibs8Anni6qrWkAf60rDsPCu.jpg',
+      vote_average: 9.1,
+      vote_count: 214,
+    },
+    {
+      backdrop_path: '/ohOrfdh80HVY5QBD8kV2FYYSVwF.jpg',
+      first_air_date: '2021-01-10',
+      genre_ids: [16, 10759],
+      id: 110309,
+      name: 'SK8 the Infinity',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: 'SK∞ エスケーエイト',
+      overview:
+        '"S" is a dangerous, top secret, no-holds-barred downhill skateboarding race down an abandoned mine. When avid skateboarder Reki takes Langa to the mountain where "S" is held, Langa, who\'s never been on a skateboard in his life, finds himself sucked into the world of "S", and…?!',
+      popularity: 39.966,
+      poster_path: '/ksb6QlSCsRLr3MNmxc8ojOOLK6V.jpg',
+      vote_average: 9,
+      vote_count: 153,
+    },
+    {
+      backdrop_path: '/7gbmM2NWcqZONbp65HUWDf4wr0Q.jpg',
+      first_air_date: '2019-07-12',
+      genre_ids: [16, 18],
+      id: 88040,
+      name: 'Given',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: 'ギヴン',
+      overview:
+        "Tightly clutching his Gibson guitar, Mafuyu Satou steps out of his dark apartment to begin another day of his high school life. While taking a nap in a quiet spot on the gymnasium staircase, he has a chance encounter with fellow student Ritsuka Uenoyama, who berates him for letting his guitar's strings rust and break. Noticing Uenoyama's knowledge of the instrument, Satou pleads for him to fix it and to teach him how to play. Uenoyama eventually agrees and invites him to sit in on a jam session with his two band mates: bassist Haruki Nakayama and drummer Akihiko Kaji.",
+      popularity: 25.536,
+      poster_path: '/pdDCcAq8RNSZNk81PXYoHNUPHjn.jpg',
+      vote_average: 9,
+      vote_count: 545,
+    },
+    {
+      backdrop_path: '/qSgBzXdu6QwVVeqOYOlHolkLRxZ.jpg',
+      first_air_date: '2019-01-09',
+      genre_ids: [16, 10759, 10765, 18],
+      id: 83095,
+      name: 'The Rising of the Shield Hero',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: '盾の勇者の成り上がり',
+      overview:
+        "Iwatani Naofumi was summoned into a parallel world along with 3 other people to become the world's Heroes. Each of the heroes respectively equipped with their own legendary equipment when summoned, Naofumi received the Legendary Shield as his weapon. Due to Naofumi's lack of charisma and experience he's labeled as the weakest, only to end up betrayed, falsely accused, and robbed by on the third day of adventure. Shunned by everyone from the king to peasants, Naofumi's thoughts were filled with nothing but vengeance and hatred. Thus, his destiny in a parallel World begins...",
+      popularity: 67.374,
+      poster_path: '/6cXf5EDwVhsRv8GlBzUTVnWuk8Z.jpg',
+      vote_average: 9,
+      vote_count: 698,
+    },
+    {
+      backdrop_path: '/uAjMQlbPkVHmUahhCouANlHSDW2.jpg',
+      first_air_date: '2019-01-11',
+      genre_ids: [16, 9648, 10765, 10759, 18],
+      id: 83097,
+      name: 'The Promised Neverland',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: '約束のネバーランド',
+      overview:
+        'Surrounded by a forest and a gated entrance, the Grace Field House is inhabited by orphans happily living together as one big family, looked after by their "Mama," Isabella. Although they are required to take tests daily, the children are free to spend their time as they see fit, usually playing outside, as long as they do not venture too far from the orphanage — a rule they are expected to follow no matter what. However, all good times must come to an end, as every few months, a child is adopted and sent to live with their new family... never to be heard from again.\n\nHowever, the three oldest siblings have their suspicions about what is actually happening at the orphanage, and they are about to discover the cruel fate that awaits the children living at Grace Field, including the twisted nature of their beloved Mama.',
+      popularity: 67.758,
+      poster_path: '/oBgRCpAbtMpk1v8wfdsIph7lPQE.jpg',
+      vote_average: 9,
+      vote_count: 721,
+    },
+    {
+      backdrop_path: '/1ejS56lC8db62IKVj1pTQlfAEQy.jpg',
+      first_air_date: '2018-09-13',
+      genre_ids: [10759, 16, 18, 10751],
+      id: 123566,
+      name: 'Metal Family',
+      origin_country: ['RU'],
+      original_language: 'ko',
+      original_name: 'Metal Family',
+      overview:
+        'Metal Family follows the daily lives of Glam and Victoria, two metal fans that fell in love and had two children together, Dee and Heavy.',
+      popularity: 25.37,
+      poster_path: '/yovTSLBdNjXIVo8CPaPWFE5NcAw.jpg',
+      vote_average: 8.9,
+      vote_count: 226,
+    },
+    {
+      backdrop_path: '/2f8OLO6UYp78dIQMs0oi7ja15Bl.jpg',
+      first_air_date: '2010-04-02',
+      genre_ids: [16, 35, 18],
+      id: 65648,
+      name: 'Maid Sama!',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: '会長はメイド様！',
+      overview:
+        'Misaki Ayuzawa is the first female student council president at a once all-boys school turned co-ed. She rules the school with strict discipline demeanor. But she has a secret—she works at a maid cafe due to her families circumstances. One day the popular A-student and notorious heart breaker Takumi Usui finds out her secret and makes a deal with her to keep it hush from the school in exchange for spending some time with him.',
+      popularity: 28.544,
+      poster_path: '/igkn0M1bgMeATz59LShvVxZNdVd.jpg',
+      vote_average: 8.9,
+      vote_count: 414,
+    },
+    {
+      backdrop_path: '/ci7jTekDFEx6U48XUCl3vBMdrns.jpg',
+      first_air_date: '2018-07-06',
+      genre_ids: [10759, 18, 9648, 16],
+      id: 80564,
+      name: 'Banana Fish',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: 'BANANA FISH',
+      overview:
+        "Nature made Ash Lynx beautiful; nurture made him a cold ruthless killer. A runaway brought up as the adopted heir and sex toy of \"Papa\" Dino Golzine, Ash, now at the rebellious age of seventeen, forsakes the kingdom held out by the devil who raised him. But the hideous secret that drove Ash's older brother mad in Vietnam has suddenly fallen into Papa's insatiably ambitious hands—and it's exactly the wrong time for Eiji Okamura, a pure-hearted young photographer from Japan, to make Ash Lynx's acquaintance...",
+      popularity: 49.421,
+      poster_path: '/1UV5di9UIXwrpCW3xQ4RNli5hEV.jpg',
+      vote_average: 8.9,
+      vote_count: 610,
+    },
+    {
+      backdrop_path: '/x6jWDL4H9TaBLGEvyej0qKiirBU.jpg',
+      first_air_date: '2014-10-10',
+      genre_ids: [16, 35, 18],
+      id: 61663,
+      name: 'Your Lie in April',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: '四月は君の嘘',
+      overview:
+        "Kousei Arima was a genius pianist until his mother's sudden death took away his ability to play. Each day was dull for Kousei. But, then he meets a violinist named Kaori Miyazono who has an eccentric playing style. Can the heartfelt sounds of the girl's violin lead the boy to play the piano again?",
+      popularity: 41.912,
+      poster_path: '/IGbeFv5Ji4W0x530JcSHiQpamY.jpg',
+      vote_average: 8.9,
+      vote_count: 591,
+    },
+    {
+      backdrop_path: '/4sSzTvk200BQyYjRJq69mLwE9xG.jpg',
+      first_air_date: '2018-04-25',
+      genre_ids: [16, 35, 18, 10759],
+      id: 79141,
+      name: 'Scissor Seven',
+      origin_country: ['CN'],
+      original_language: 'zh',
+      original_name: '刺客伍六七',
+      overview:
+        'Seeking to recover his memory, a scissor-wielding, hairdressing, bungling quasi-assassin stumbles into a struggle for power among feuding factions.',
+      popularity: 54.732,
+      poster_path: '/A39DWUIrf9WDRHCg7QTR8seWUvi.jpg',
+      vote_average: 8.9,
+      vote_count: 272,
+    },
+    {
+      backdrop_path: '/mWwWhDiQWONiSS4Go12TTjNw0E5.jpg',
+      first_air_date: '2016-10-06',
+      genre_ids: [16, 35, 18],
+      id: 68129,
+      name: 'Yuri!!! on Ice',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: 'ユーリ!!! on ICE',
+      overview:
+        "Yūri Katsuki carried all of Japan's hopes on his shoulders to win at the Gran Prix Finale ice skating competition, but suffered a crushing defeat. He returns home to Kyushu and half feels like he wants to retire, and half feels like he wants to continue ice skating. Suddenly the five-time consecutive world championship ice skater Victor Nikiforov appears before him with Yuri Plisetsky, a young Russian figure skater who is already defeating his seniors. Victor and both Yuris take up the challenge on an unprecedented Gran Prix series.",
+      popularity: 21.839,
+      poster_path: '/oKVFf2uNCLMsovWBxAW14MmhHUm.jpg',
+      vote_average: 8.9,
+      vote_count: 444,
+    },
+    {
+      backdrop_path: '/T2Oi1KTOOVhHygBK99yX4QHZg9.jpg',
+      first_air_date: '2021-02-20',
+      genre_ids: [10759, 35, 18],
+      id: 117376,
+      name: 'Vincenzo',
+      origin_country: ['KR'],
+      original_language: 'ko',
+      original_name: '빈센조',
+      overview:
+        'Vincenzo Cassano is an Italian lawyer and Mafia consigliere who moves back to Korea due to a conflict within his organization. He ends up crossing paths with a sharp-tongued lawyer named Cha-young, and the two join forces in using villainous methods to take down villains who cannot be punished by the law.',
+      popularity: 85.249,
+      poster_path: '/dvXJgEDQXhL9Ouot2WkBHpQiHGd.jpg',
+      vote_average: 8.9,
+      vote_count: 374,
+    },
+    {
+      backdrop_path: '/dwEkNoGFZJWqiwJrnzVfmtmVhfU.jpg',
+      first_air_date: '2019-01-11',
+      genre_ids: [16, 35, 18],
+      id: 84669,
+      name: 'The Quintessential Quintuplets',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: '五等分の花嫁',
+      overview:
+        'Fuutarou Uesugi is a poor, antisocial ace student who one day meets the rich transfer student Itsuki Nakano. They argue but when Uesugi realizes he is to be her tutor, he tries to get on better terms. While trying to do so he meets four other girls.',
+      popularity: 92.944,
+      poster_path: '/mrahUSmFjae8UHtlOcZ58ytmAGu.jpg',
+      vote_average: 8.9,
+      vote_count: 452,
+    },
+    {
+      backdrop_path: '/rXXC22YUo31QfOsavy0jUbqdxFc.jpg',
+      first_air_date: '2014-12-09',
+      genre_ids: [10765, 10759, 16],
+      id: 73055,
+      name: 'Attack on Titan: No Regrets',
+      origin_country: ['JP'],
+      original_language: 'ja',
+      original_name: '進撃の巨人 悔いなき選択',
+      overview:
+        "Many years before becoming the famed captain of the Survey Corps, a young Levi struggles to survive in the capital's garbage dump, the Underground. As the boss of his own criminal operation, Levi attempts to get by with meager earnings while aided by fellow criminals, Isabel Magnolia and Farlan Church. With little hope for the future, Levi accepts a deal from the anti-expedition faction leader Nicholas Lobov, who promises the trio citizenship aboveground if they are able to successfully assassinate Erwin Smith, a squad leader of the Survey Corps.",
+      popularity: 77.812,
+      poster_path: '/xGdz67d5WHIU7kIqVHO2TxIpmhZ.jpg',
+      vote_average: 8.9,
+      vote_count: 1670,
+    },
+    {
+      backdrop_path: '/mmEJYkP5mpWsgsJPxLulcL6y4Ir.jpg',
+      first_air_date: '2020-10-31',
+      genre_ids: [16, 35, 10765],
+      id: 95666,
+      name: 'Helluva Boss',
+      origin_country: ['US'],
+      original_language: 'en',
+      original_name: 'Helluva Boss',
+      overview:
+        'Follow Blitzo, a classic demon Imp who sets out to run his own small assassin business with his weapons specialist Moxxie, his bruiser Millie, and his receptionist hellhound Loona. Together they attempt to survive each other while running a startup in Hell.',
+      popularity: 33.075,
+      poster_path: '/mEHUgujxM62HtOyqNgZFENMIqgb.jpg',
+      vote_average: 8.9,
+      vote_count: 279,
+    },
+  ],
+  total_pages: 107,
+  total_results: 2130,
+};

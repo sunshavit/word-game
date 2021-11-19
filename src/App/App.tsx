@@ -1,14 +1,12 @@
 import React from 'react';
 import GuessLetter from '../Componnents/GuessLetter';
+import Home from '../Componnents/Home';
+import LettersGuessContextProvider from '../Context/LettersGuessContext';
 
-
-
-function App() {
-  return (
-    <div style={{display:'flex', justifyContent:'center',alignItems:'center'}} className="App">
-     <GuessLetter isGuess={true} letter='L'/>
-    </div>
-  );
-}
+const App = () => (
+  <LettersGuessContextProvider>
+    <Home />
+  </LettersGuessContextProvider>
+);
 
 export default App;
