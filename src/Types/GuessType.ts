@@ -1,10 +1,12 @@
 export interface GuessLetters {
-   letters : String;
+   letter : string;
    isGuess : boolean;
 }
 
 export interface Guess {
-   guess : GuessLetters[];
-   img : String | null;
-   selectedCard : Number; 
+   guess : string[];
+   img ?: string | null;
+   selectedCard : number; 
+   mistake : number;
+   correct : number;
 }

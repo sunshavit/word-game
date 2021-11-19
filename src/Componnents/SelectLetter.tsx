@@ -1,17 +1,24 @@
 import React from 'react';
 import useToggle from '../Hooks/useToggle';
 import * as Styled from '../Styles/SelectLetter.style';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../App/store';
+import { correctGuess, guess } from '../Slices/GuessesSlice';
 
 interface GuessLetterProps {
-  // isSelected : boolean,
   letter: string;
 }
 
 const SelectLetter = ({ letter }: GuessLetterProps) => {
+  const dispatch = useDispatch();
+  const guesses = useSelector((state: RootState) => state.GuessesSlice);
   const { isChecked, changeChecked } = useToggle();
 
   const handelClick = () => {
-    !isChecked && changeChecked();
+    if (!isChecked) {
+      changeChecked();
+      dispatch(guess({ index: guesses.selectedCard, letter }));
+    }
   };
 
   return (

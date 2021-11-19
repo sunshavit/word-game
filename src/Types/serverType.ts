@@ -7,7 +7,7 @@ export interface ServerResponse {
 
 export interface Result {
     backdrop_path:     null | string;
-    first_air_date:    String;
+    first_air_date:    string;
     genre_ids:         number[];
     id:                number;
     name:              string;

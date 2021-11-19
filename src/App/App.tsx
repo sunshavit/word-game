@@ -1,12 +1,12 @@
 import React from 'react';
-import GuessLetter from '../Componnents/GuessLetter';
 import Home from '../Componnents/Home';
-import LettersGuessContextProvider from '../Context/LettersGuessContext';
+import { store } from './store';
+import { Provider } from 'react-redux';
 
 const App = () => (
-  <LettersGuessContextProvider>
+  <Provider store={store}>
     <Home />
-  </LettersGuessContextProvider>
+  </Provider>
 );
 
 export default App;

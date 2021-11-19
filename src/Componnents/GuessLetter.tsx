@@ -1,17 +1,32 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../App/store';
+import { changeSelect } from '../Slices/GuessesSlice';
 import * as Styled from '../Styles/GuessLetter.style';
 
 interface GuessLetterProps {
-    isGuess : boolean,
-    letter : string,
+  letter: string;
+  isSelected: boolean;
+  index: number;
 }
 
-const GuessLetter = ({isGuess,letter}:GuessLetterProps)=> {
-    return (
-        <Styled.LetterContainer>
-            {isGuess? letter : '' }
-        </Styled.LetterContainer>
-    );
-}
+const GuessLetter = ({ letter, isSelected, index }: GuessLetterProps) => {
+  const guesses = useSelector((state: RootState) => state.GuessesSlice);
+  const dispatch = useDispatch();
+
+  const handelClick = () => {
+    if (letter !== ' ') dispatch(changeSelect(index));
+  };
+
+  return (
+    <Styled.LetterContainer
+      isSpace={letter === ' '}
+      isSelected={isSelected}
+      onClick={handelClick}
+    >
+      {letter}
+    </Styled.LetterContainer>
+  );
+};
 
 export default GuessLetter;

@@ -1,16 +1,13 @@
 import * as React from 'react';
 
+const useToggle = (initialChecked: boolean = false) => {
+  const [isChecked, setIsChecked] = React.useState(initialChecked);
 
+  const changeChecked = React.useCallback(() => {
+    setIsChecked(prev => false);
+  }, []);
 
-const useToggle=(initialChecked:boolean=false)=> {
-    const [isChecked, setIsChecked] = React.useState(initialChecked)
-
-    const changeChecked = React.useCallback(()=>{
-        setIsChecked(prev=> !prev)
-    },[])
-
-
-    return {isChecked,changeChecked};
-}
+  return { isChecked, changeChecked };
+};
 
 export default useToggle;
