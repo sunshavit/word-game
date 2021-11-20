@@ -1,8 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import { useDispatch } from 'react-redux';
-import QuestionMark from '../Assets/QuestionMark';
-import { correctGuess } from '../Slices/GuessesSlice';
+import { correctGuess, mistake } from '../Store/Slices/GuessesSlice';
 import * as Styled from '../Styles/ImageSection.style';
+import Live from './Live';
+import StatisticAndHelp from './StatisticAndHelp';
 
 interface ImageSectionProps {
   imageSrc?: string | null;
@@ -11,28 +12,35 @@ interface ImageSectionProps {
 }
 
 const ImageSection = ({ imageSrc, movieName, guesses }: ImageSectionProps) => {
+  const [blur, setBlur] = React.useState(7);
   const dispatch = useDispatch();
   const handelClick = () => {
     if (movieName) {
       if (movieName.toLowerCase() === guesses.join('')) {
         dispatch(correctGuess());
+      } else {
+        dispatch(mistake());
       }
     }
   };
 
+  const changeBlurImg = () => {
+    setBlur(prev => prev - 1);
+  };
+
   return (
-    <Styled.ImgSection>
+    <Styled.ImgSection blurPx={`${blur}px`}>
       <Styled.Title>Guess What?</Styled.Title>
       <Styled.Img src={imageSrc ? imageSrc : ''} />
-      <Styled.IconsContainer>
-        <Styled.IconContainer>
-          <QuestionMark />
-        </Styled.IconContainer>
-        <Styled.IconContainer>
-          <QuestionMark />
-        </Styled.IconContainer>
-      </Styled.IconsContainer>
-      <Styled.SubmitButton onClick={handelClick}>Submit</Styled.SubmitButton>
+      <StatisticAndHelp
+        guesses={guesses}
+        movieName={movieName || ''}
+        changBlurImg={changeBlurImg}
+      />
+      <Live />
+      <Styled.SubmitButton onClick={handelClick}>
+        Check the guess
+      </Styled.SubmitButton>
     </Styled.ImgSection>
   );
 };

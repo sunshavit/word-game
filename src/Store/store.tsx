@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import GuessesSlice from '../Slices/GuessesSlice';
+import { MoviesApi } from './Api/MoviesApi';
+import GuessesSlice from './Slices/GuessesSlice';
 export const store = configureStore({
-  reducer: { GuessesSlice },
+  reducer: { GuessesSlice, [MoviesApi.reducerPath]: MoviesApi.reducer },
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware().concat(MoviesApi.middleware),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

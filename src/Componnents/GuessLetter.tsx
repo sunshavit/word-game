@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../App/store';
-import { changeSelect } from '../Slices/GuessesSlice';
+import { RootState } from '../Store/store';
+import { changeSelect } from '../Store/Slices/GuessesSlice';
 import * as Styled from '../Styles/GuessLetter.style';
 
 interface GuessLetterProps {

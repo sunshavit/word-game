@@ -2,8 +2,8 @@ import React from 'react';
 import useToggle from '../Hooks/useToggle';
 import * as Styled from '../Styles/SelectLetter.style';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../App/store';
-import { correctGuess, guess } from '../Slices/GuessesSlice';
+import { RootState } from '../Store/store';
+import { correctGuess, guess } from '../Store/Slices/GuessesSlice';
 
 interface GuessLetterProps {
   letter: string;

@@ -7,9 +7,10 @@ interface Props {
 export const LetterCard = styled.button<Props>`
   height: 20%;
   width: 7%;
+  user-select: none;
   background-color: #eab676;
   outline: none;
-  padding: 10px;
+  padding: 0px;
   position: relative;
   font-weight: 500;
   font-size: 35px;
@@ -21,6 +22,13 @@ export const LetterCard = styled.button<Props>`
   box-shadow: 4px 4px 0px 0px #e28743;
   margin: 1%;
   opacity: ${({ isChecked }) => (isChecked ? 0 : 1)};
+  @media (max-width: 1350px) {
+    font-size: 20px;
+    width: 10%;
+  }
+  @media (max-width: 800px) {
+    font-size: 15px;
+  }
   &:before {
     content: '';
     position: absolute;

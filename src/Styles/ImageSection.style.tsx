@@ -4,8 +4,15 @@ interface ImgProps {
   src: string;
 }
 
+interface BlurProps {
+  blurPx?: string;
+  color?: string;
+}
+
 export const IconContainer = styled.div`
-  padding: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
   cursor: pointer;
 `;
 
@@ -17,27 +24,32 @@ export const IconsContainer = styled.div`
   justify-content: end;
 `;
 
-export const ImgSection = styled.div`
+export const Img = styled.img.attrs<ImgProps>(({ src }) => ({
+  src: `http://image.tmdb.org/t/p/w500/${src}`,
+}))<ImgProps>`
+  width: 30%;
+  height: 50%;
+  user-select: none;
+`;
+
+export const ImgSection = styled.div<BlurProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   height: 45%;
-  background-color: #76b5c5;
-`;
-
-export const Img = styled.img.attrs<ImgProps>(({ src }) => ({
-  src: `http://image.tmdb.org/t/p/w500/${src}`,
-}))`
-  width: 30%;
-  height: 50%;
+  background-color: ${({ color = '#76b5c5' }) => color};
+  ${Img} {
+    filter: ${({ blurPx = 7 }) => `blur(${blurPx})`};
+  }
 `;
 
 export const Title = styled.div`
   font-size: 30px;
   font-weight: 500;
   color: #ffff;
+  user-select: none;
 `;
 
 export const SubmitButton = styled.button`
@@ -50,8 +62,14 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.5s ease-in;
+  user-select: none;
   :hover {
     color: #4caf50;
     background-color: #ffff;
   }
+`;
+
+export const LoseTitle = styled.div`
+  font-size: 30px;
+  color: #ffff;
 `;
