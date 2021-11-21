@@ -54,12 +54,12 @@ const StatisticAndHelp = ({ changBlurImg, hintMessage }: ImageSectionProps) => {
           <QuestionMark />
         </Styled.IconContainer>
       </Tooltip>
-      <Tooltip title="change image to clearer" arrow>
+      <Tooltip title="Unblur image" arrow>
         <Styled.IconContainer onClick={changBlurImg}>
           <Image />
         </Styled.IconContainer>
       </Tooltip>
-      <Tooltip title="show your statistics" arrow>
+      <Tooltip title="Show your statistics" arrow>
         <Styled.IconContainer onClick={showStatistics}>
           <Statistics />
         </Styled.IconContainer>
