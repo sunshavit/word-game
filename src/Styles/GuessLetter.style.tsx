@@ -7,7 +7,7 @@ interface Props {
 
 export const LetterContainer = styled.button<Props>`
   width: 2%;
-  height: 40%;
+  height: 25%;
   user-select: none;
   text-align: center;
   border: 0;
