@@ -49,9 +49,6 @@ const Home = () => {
           img:
             data?.results[indexMovie].backdrop_path ||
             data?.results[indexMovie].poster_path,
-          selectedCard: 1,
-          mistake: 0,
-          correct: indexMovie,
         })
       );
     }
@@ -78,7 +75,8 @@ const Home = () => {
       <ImageSection
         imageSrc={guesses.img}
         guesses={guesses.guess}
-        movieName={data?.results[guesses.correct].name}
+        movieName={data?.results[guesses.correct].name || ''}
+        hintMessage={data?.results[guesses.correct].overview || ''}
       />
       <Styled.DisplayLetterSection>
         {guesses.guess.map((letter, index) => (

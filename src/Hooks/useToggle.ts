@@ -4,7 +4,7 @@ const useToggle = (initialChecked: boolean = false) => {
   const [isChecked, setIsChecked] = React.useState(initialChecked);
 
   const changeChecked = React.useCallback(() => {
-    setIsChecked(prev => false);
+    setIsChecked(prev => !prev);
   }, []);
 
   return { isChecked, changeChecked };

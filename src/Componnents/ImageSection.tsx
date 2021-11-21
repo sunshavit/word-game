@@ -9,14 +9,20 @@ interface ImageSectionProps {
   imageSrc?: string | null;
   guesses: string[];
   movieName?: string;
+  hintMessage: string;
 }
 
-const ImageSection = ({ imageSrc, movieName, guesses }: ImageSectionProps) => {
+const ImageSection: React.FC<ImageSectionProps> = ({
+  imageSrc,
+  movieName,
+  guesses,
+  hintMessage,
+}) => {
   const [blur, setBlur] = React.useState(7);
   const dispatch = useDispatch();
   const handelClick = () => {
     if (movieName) {
-      if (movieName.toLowerCase() === guesses.join('')) {
+      if (movieName.toLowerCase() === guesses.join('').toLowerCase()) {
         dispatch(correctGuess());
       } else {
         dispatch(mistake());
@@ -33,8 +39,7 @@ const ImageSection = ({ imageSrc, movieName, guesses }: ImageSectionProps) => {
       <Styled.Title>Guess What?</Styled.Title>
       <Styled.Img src={imageSrc ? imageSrc : ''} />
       <StatisticAndHelp
-        guesses={guesses}
-        movieName={movieName || ''}
+        hintMessage={hintMessage}
         changBlurImg={changeBlurImg}
       />
       <Live />

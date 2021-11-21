@@ -12,20 +12,12 @@ interface GuessLetterProps {
 const SelectLetter = ({ letter }: GuessLetterProps) => {
   const dispatch = useDispatch();
   const guesses = useSelector((state: RootState) => state.GuessesSlice);
-  const { isChecked, changeChecked } = useToggle();
 
   const handelClick = () => {
-    if (!isChecked) {
-      changeChecked();
-      dispatch(guess({ index: guesses.selectedCard, letter }));
-    }
+    dispatch(guess({ index: guesses.selectedCard, letter }));
   };
 
-  return (
-    <Styled.LetterCard isChecked={isChecked} onClick={handelClick}>
-      {letter}
-    </Styled.LetterCard>
-  );
+  return <Styled.LetterCard onClick={handelClick}>{letter}</Styled.LetterCard>;
 };
 
 export default SelectLetter;

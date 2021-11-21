@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-interface Props {
-  isChecked: boolean;
-}
-
-export const LetterCard = styled.button<Props>`
+export const LetterCard = styled.button`
   height: 20%;
   width: 7%;
   user-select: none;
@@ -21,7 +17,6 @@ export const LetterCard = styled.button<Props>`
   overflow: hidden;
   box-shadow: 4px 4px 0px 0px #e28743;
   margin: 1%;
-  opacity: ${({ isChecked }) => (isChecked ? 0 : 1)};
   @media (max-width: 1350px) {
     font-size: 20px;
     width: 10%;

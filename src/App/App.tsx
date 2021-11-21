@@ -1,12 +1,15 @@
 import React from 'react';
 import Home from '../Componnents/Home';
-import { store } from '../Store/store';
+import store, { persist } from '../Store/store';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
 const App = () => (
-  <Provider store={store}>
-    <Home />
-  </Provider>
+  <PersistGate persistor={persist}>
+    <Provider store={store}>
+      <Home />
+    </Provider>
+  </PersistGate>
 );
 
 export default App;

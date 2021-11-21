@@ -9,4 +9,5 @@ export interface Guess {
    selectedCard : number; 
    mistake : number;
    correct : number;
+   hint : number,
 }

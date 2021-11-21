@@ -4,10 +4,10 @@ import { ServerResponse } from '../../Types/serverType'
 
 export const MoviesApi = createApi({
     reducerPath : 'moviesApi',
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://api.themoviedb.org/3/tv'}),
+    baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_URL}),
     endpoints:(builder)=>({getMovies:builder.query<ServerResponse,string>({
         query: (page) => ({url:'/top_rated' ,params:{
-            api_key:'7552925846ab0e142a1f61935b4d5885',
+            api_key:process.env.REACT_APP_KEY,
             language:'en-US',
             page,
         }}),

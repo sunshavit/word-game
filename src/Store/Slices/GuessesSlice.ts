@@ -8,19 +8,25 @@ interface IndexAndLetter {
   letter: string;
 }
 
+interface LettersAndImg {
+  img ?: string;
+  guess : string[]
+}
+
 const initialState: Guess = {
   guess: [],
   img: '',
   selectedCard: 0,
   mistake: 0,
   correct: 0,
+  hint :0,
 };
 
 export const GuessesSlice = createSlice({
   name: 'guesses',
   initialState,
   reducers: {
-    setGuesses: (state: Guess, { payload }: PayloadAction<Guess>) => ({
+    setGuesses: (state: Guess, { payload }: PayloadAction<LettersAndImg>) => ({
       ...state,
       ...payload,
     }),
@@ -53,6 +59,10 @@ export const GuessesSlice = createSlice({
       state.mistake = 0;
       state.selectedCard = 0;
     },
+    addHint: (state: Guess) => {
+      state.hint += 1;
+     
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -66,7 +76,7 @@ export const GuessesSlice = createSlice({
     },
 });
 
-export const { setGuesses, correctGuess, guess, changeSelect, help, mistake,playAgain } =
+export const { setGuesses, correctGuess, guess, changeSelect, help, mistake,playAgain ,addHint } =
   GuessesSlice.actions;
 
 export default GuessesSlice.reducer;

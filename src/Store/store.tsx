@@ -1,11 +1,31 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { MoviesApi } from './Api/MoviesApi';
 import GuessesSlice from './Slices/GuessesSlice';
-export const store = configureStore({
-  reducer: { GuessesSlice, [MoviesApi.reducerPath]: MoviesApi.reducer },
+import { persistReducer, persistStore } from 'redux-persist';
+import { combineReducers } from 'redux';
+import sessionStorage from 'redux-persist/es/storage/session';
+
+const config = {
+  key: 'root',
+  storage: sessionStorage,
+  version: 1,
+  blacklist: ['guess', 'img'],
+};
+
+const rootReducer = combineReducers({
+  GuessesSlice: persistReducer(config, GuessesSlice),
+  [MoviesApi.reducerPath]: MoviesApi.reducer,
+});
+
+const store = configureStore({
+  reducer: rootReducer,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware().concat(MoviesApi.middleware),
 });
+
+export const persist = persistStore(store);
+
+export default store;
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
