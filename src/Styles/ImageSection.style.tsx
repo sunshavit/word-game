@@ -14,6 +14,10 @@ export const IconContainer = styled.div`
   height: 30px;
   padding: 10px;
   cursor: pointer;
+
+  .css-1k51tf5-MuiTooltip-tooltip {
+    font-size: 15px !important;
+  }
 `;
 
 export const IconsContainer = styled.div`

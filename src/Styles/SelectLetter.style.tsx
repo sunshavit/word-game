@@ -19,10 +19,11 @@ export const LetterCard = styled.button`
   margin: 1%;
   @media (max-width: 1350px) {
     font-size: 20px;
-    width: 5%;
+    width: 3%;
   }
   @media (max-width: 800px) {
     font-size: 15px;
+    width: 4%;
   }
   &:before {
     content: '';

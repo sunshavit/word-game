@@ -16,12 +16,14 @@ const GuessLetter = ({ letter, isSelected, index }: GuessLetterProps) => {
   };
 
   return (
-    <Styled.LetterContainer
-      isSpace={letter === ' '}
-      isSelected={isSelected}
-      onClick={handelClick}
-    >
-      {letter}
+    <Styled.LetterContainer>
+      <Styled.LetterButton
+        isSpace={letter === ' '}
+        isSelected={isSelected}
+        onClick={handelClick}
+      >
+        {letter}
+      </Styled.LetterButton>
     </Styled.LetterContainer>
   );
 };
