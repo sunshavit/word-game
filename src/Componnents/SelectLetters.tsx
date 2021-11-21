@@ -3,12 +3,12 @@ import { shallowEqual } from 'react-redux';
 import * as Styled from '../Styles/SelectLetters.style';
 import SelectLetter from './SelectLetter';
 
-interface SelectLetters {
+interface SelectLettersProps {
   letters: string[];
 }
 const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
-const SelectLetters = ({ letters }: SelectLetters) => {
+const SelectLetters = ({ letters }: SelectLettersProps) => {
   console.log(letters);
   const randomCharacter = letters.map(
     () => alphabet[Math.floor(Math.random() * alphabet.length)]

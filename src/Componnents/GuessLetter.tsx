@@ -1,6 +1,4 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../Store/store';
+import { useDispatch } from 'react-redux';
 import { changeSelect } from '../Store/Slices/GuessesSlice';
 import * as Styled from '../Styles/GuessLetter.style';
 
@@ -11,7 +9,6 @@ interface GuessLetterProps {
 }
 
 const GuessLetter = ({ letter, isSelected, index }: GuessLetterProps) => {
-  const guesses = useSelector((state: RootState) => state.GuessesSlice);
   const dispatch = useDispatch();
 
   const handelClick = () => {

@@ -28,7 +28,7 @@ const Row = styled.div`
   margin: 5px;
 `;
 
-interface StatisticsModal {
+interface StatisticsModalProps {
   isOpenModal: boolean;
   hints: number;
   mistake: number;
@@ -36,7 +36,7 @@ interface StatisticsModal {
   closeModal: () => void;
 }
 
-const StatisticsModal: React.FC<StatisticsModal> = ({
+const StatisticsModal: React.FC<StatisticsModalProps> = ({
   isOpenModal,
   hints,
   mistake,

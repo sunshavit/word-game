@@ -22,7 +22,7 @@ const Home = () => {
         guess({ index: guesses.selectedCard, letter: event.key.toString() })
       );
     },
-    [guess, dispatch, guesses.selectedCard]
+    [dispatch, guesses.selectedCard]
   );
 
   React.useEffect(() => {
@@ -52,7 +52,7 @@ const Home = () => {
         })
       );
     }
-  }, [guesses.correct, data]);
+  }, [guesses.correct, data, dispatch]);
 
   const playAgainHandelClick = () => {
     dispatch(playAgain());
