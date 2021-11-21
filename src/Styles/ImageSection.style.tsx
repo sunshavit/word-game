@@ -21,14 +21,14 @@ export const IconsContainer = styled.div`
   width: 100%;
   height: 10%;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 `;
 
 export const Img = styled.img.attrs<ImgProps>(({ src }) => ({
   src: `http://image.tmdb.org/t/p/w500/${src}`,
 }))<ImgProps>`
   width: 30%;
-  height: 50%;
+  height: 40%;
   user-select: none;
 `;
 

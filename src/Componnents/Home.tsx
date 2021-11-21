@@ -3,7 +3,12 @@ import * as Styled from '../Styles/Home.style';
 import GuessLetter from './GuessLetter';
 import SelectLetters from './SelectLetters';
 import { useSelector, useDispatch } from 'react-redux';
-import { guess, playAgain, setGuesses } from '../Store/Slices/GuessesSlice';
+import {
+  guess,
+  playAgain,
+  setGuesses,
+  changeSelect,
+} from '../Store/Slices/GuessesSlice';
 import { RootState } from '../Store/store';
 import ImageSection from './ImageSection';
 import { useGetMoviesQuery } from '../Store/Api/MoviesApi';
@@ -18,9 +23,21 @@ const Home = () => {
 
   const keyBoardFun = React.useCallback(
     (event: KeyboardEvent) => {
-      dispatch(
-        guess({ index: guesses.selectedCard, letter: event.key.toString() })
-      );
+      switch (true) {
+        case event.key === 'ArrowLeft':
+          dispatch(changeSelect(guesses.selectedCard - 1));
+          break;
+        case event.key === 'ArrowRight':
+          dispatch(changeSelect(guesses.selectedCard + 1));
+          break;
+        case 'abcdefghijklmnopqrstuvwxyz'.includes(event.key):
+          dispatch(
+            guess({ index: guesses.selectedCard, letter: event.key.toString() })
+          );
+          break;
+        default:
+          break;
+      }
     },
     [dispatch, guesses.selectedCard]
   );
@@ -33,32 +50,48 @@ const Home = () => {
   }, [guesses.selectedCard, keyBoardFun]);
 
   React.useEffect(() => {
-    const indexMovie = guesses.correct === -1 ? 0 : guesses.correct;
-    if (guesses.correct === data?.results.length) {
+    if (guesses.correct === 20) {
       setPage(prev => prev + 1);
-    } else {
-      const guessLetters: string[] =
-        data?.results[indexMovie].name
-          .split('')
-          .map((letter, index) =>
-            !index ? letter : letter === ' ' ? ' ' : ''
-          ) || [];
-      dispatch(
-        setGuesses({
-          guess: guessLetters,
-          img:
-            data?.results[indexMovie].backdrop_path ||
-            data?.results[indexMovie].poster_path,
-        })
-      );
     }
+  }, [guesses.correct]);
+
+  React.useEffect(() => {
+    const indexMovie =
+      guesses.correct === -1 || guesses.correct === 20 ? 0 : guesses.correct;
+    const guessLetters: string[] =
+      data?.results[indexMovie].name
+        .split('')
+        .map((letter, index) =>
+          index % 1 === 0 ||
+          !'abcdefghijklmnopqrstuvwxyz'.includes(letter.toLowerCase())
+            ? letter
+            : ''
+        ) || [];
+    dispatch(
+      setGuesses({
+        guess: guessLetters,
+        img:
+          data?.results[indexMovie].backdrop_path ||
+          data?.results[indexMovie].poster_path,
+        correct: indexMovie,
+      })
+    );
   }, [guesses.correct, data, dispatch]);
 
   const playAgainHandelClick = () => {
     dispatch(playAgain());
   };
 
-  if (isLoading || guesses.correct === -1) return <div>lodder</div>;
+  if (
+    isLoading ||
+    guesses.correct === -1 ||
+    (data && guesses.correct === data.results.length)
+  )
+    return (
+      <Styled.LoaderContainer>
+        <Styled.Loader />
+      </Styled.LoaderContainer>
+    );
   if (isError) return <div> error </div>;
   if (guesses.mistake === 3) {
     return (
@@ -92,7 +125,7 @@ const Home = () => {
         <Styled.SelectedSection>
           <SelectLetters
             letters={
-              data?.results[0].name
+              data?.results[guesses.correct].name
                 .split('')
                 .filter(letter => letter !== ' ') || []
             }

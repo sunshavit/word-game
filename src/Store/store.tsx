@@ -9,7 +9,7 @@ const config = {
   key: 'root',
   storage: sessionStorage,
   version: 1,
-  blacklist: ['guess', 'img'],
+  blacklist: ['guess', 'img', 'selectedCard'],
 };
 
 const rootReducer = combineReducers({

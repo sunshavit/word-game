@@ -38,14 +38,14 @@ const ImageSection: React.FC<ImageSectionProps> = ({
     <Styled.ImgSection blurPx={`${blur}px`}>
       <Styled.Title>Guess What?</Styled.Title>
       <Styled.Img src={imageSrc ? imageSrc : ''} />
-      <StatisticAndHelp
-        hintMessage={hintMessage}
-        changBlurImg={changeBlurImg}
-      />
       <Live />
       <Styled.SubmitButton onClick={handelClick}>
         Check the guess
       </Styled.SubmitButton>
+      <StatisticAndHelp
+        hintMessage={hintMessage}
+        changBlurImg={changeBlurImg}
+      />
     </Styled.ImgSection>
   );
 };

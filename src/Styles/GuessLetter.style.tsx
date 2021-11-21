@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const LetterContainer = styled.button<Props>`
-  width: 3%;
+  width: 2%;
   height: 40%;
   user-select: none;
   text-align: center;
@@ -20,9 +20,9 @@ export const LetterContainer = styled.button<Props>`
     font-size: 20px;
   }
   @media (max-width: 900px) {
-    font-size: 15px;
+    font-size: 12px;
   }
-  margin: 10px;
+  margin: 2%;
   cursor: ${({ isSpace }) => (isSpace ? 'default' : 'pointer')};
   transition: all 1s;
   opacity: ${({ isSpace }) => (isSpace ? 0 : 1)};

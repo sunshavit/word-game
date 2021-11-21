@@ -1,9 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const LettersCardContainer = styled.div`
-   display: flex;
-    height: 85%;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   width: 60%;
-`
+  display: flex;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+`;

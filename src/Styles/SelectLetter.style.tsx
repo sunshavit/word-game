@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const LetterCard = styled.button`
   height: 20%;
-  width: 7%;
+  width: 2%;
   user-select: none;
   background-color: #eab676;
   outline: none;
@@ -19,7 +19,7 @@ export const LetterCard = styled.button`
   margin: 1%;
   @media (max-width: 1350px) {
     font-size: 20px;
-    width: 10%;
+    width: 5%;
   }
   @media (max-width: 800px) {
     font-size: 15px;
