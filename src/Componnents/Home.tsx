@@ -62,7 +62,7 @@ const Home = () => {
       data?.results[indexMovie].name
         .split('')
         .map((letter, index) =>
-          index % 1 === 0 ||
+          index % 5 === 0 ||
           !'abcdefghijklmnopqrstuvwxyz'.includes(letter.toLowerCase())
             ? letter
             : ''
