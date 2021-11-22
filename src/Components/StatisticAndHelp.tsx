@@ -10,12 +10,15 @@ import Statistics from '../Assets/Statistics';
 import { RootState } from '../Store/store';
 import StatisticsModal from './StatisticsModal';
 
-interface ImageSectionProps {
+interface StatisticAndHelpProps {
   changBlurImg: () => void;
   hintMessage: string;
 }
 
-const StatisticAndHelp = ({ changBlurImg, hintMessage }: ImageSectionProps) => {
+const StatisticAndHelp: React.FC<StatisticAndHelpProps> = ({
+  changBlurImg,
+  hintMessage,
+}) => {
   const dispatch = useDispatch();
   const guesses = useSelector((state: RootState) => state.GuessesSlice);
   const { isChecked, changeChecked } = useToggle();

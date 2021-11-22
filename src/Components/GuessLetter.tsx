@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import { changeSelect } from '../Store/Slices/GuessesSlice';
 import * as Styled from '../Styles/GuessLetter.style';

@@ -9,7 +9,6 @@ interface SelectLettersProps {
 const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
 const SelectLetters = ({ letters }: SelectLettersProps) => {
-  console.log(letters);
   const randomCharacter = letters.map(
     () => alphabet[Math.floor(Math.random() * alphabet.length)]
   );

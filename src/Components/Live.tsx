@@ -5,7 +5,13 @@ import BrokenHeart from '../Assets/brokenHeart';
 import Heart from '../Assets/Heart';
 import { RootState } from '../Store/store';
 
-const IconContainer = styled.div`
+interface testIdProps {
+  testId: string;
+}
+
+const IconContainer = styled.div.attrs<testIdProps>(({ testId }) => ({
+  testId: testId,
+}))<testIdProps>`
   padding: 10px;
   svg {
     width: 20px;
@@ -43,11 +49,11 @@ const Live = () => {
     <Container>
       {arrayOfMistake.map((_, index) =>
         index < 3 - mistake ? (
-          <IconContainer key={index}>
+          <IconContainer testId="heart" key={index}>
             <Heart />
           </IconContainer>
         ) : (
-          <IconContainer key={index}>
+          <IconContainer testId="brokenHeart" key={index}>
             <BrokenHeartStyle>
               <BrokenHeart />
             </BrokenHeartStyle>

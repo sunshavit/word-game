@@ -1,3 +1,4 @@
+import * as React from 'react';
 import * as Styled from '../Styles/SelectLetter.style';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../Store/store';
